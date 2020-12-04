@@ -8,11 +8,11 @@ endif
 
 " My vimrc configs
 set nu rnu
-execute "set <M>=^["
+
 nnoremap <silent> <c-a> :bprevious<cr>
 nnoremap <silent> <c-d> :bnext<cr>
-noremap <M-k> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
-noremap <M-j> ddp
+noremap <c-k> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
+noremap <c-j> ddp
 
 " Aspect
 let g:airline#extensions#tabline#enabled = 1
